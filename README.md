@@ -1,7 +1,7 @@
 # 🐧 Open Source Adoption Pipeline
 
 A data engineering pipeline that tracks **product adoption and market penetration** for open source projects in the Ubuntu/Canonical ecosystem — built to demonstrate real-world data engineering skills.
-
+🚀 Live Demo: opensourcepipeline-pm4xgecyttzfdn4d7owtkx.streamlit.app
 ## 🎯 What This Project Does
 
 - **Collects** daily snapshots of GitHub metrics (stars, forks, issues, contributors, releases) for key OSS repos
