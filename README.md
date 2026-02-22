@@ -44,6 +44,10 @@ cp .env.example .env
 ```
 Get a GitHub token at: https://github.com/settings/tokens (select `public_repo` scope)
 
+You can configure the database in one of two ways:
+- `DATABASE_URL` (recommended for deployment)
+- or `DB_USER`, `DB_PASSWORD`, `DB_HOST`, `DB_PORT`, `DB_NAME`
+
 ### 3. Initialize Database
 ```bash
 python models/database.py
@@ -104,6 +108,20 @@ opensource_pipeline/
 ├── requirements.txt
 └── .env.example
 ```
+
+
+## 🚀 Streamlit Deployment Notes
+
+If deployment fails, check these common issues:
+
+1. **Spelling:** the platform is **Streamlit** (not *streamlist*).
+2. **Secrets/env vars:** you must define `DATABASE_URL` (recommended) or all DB variables (`DB_USER`, `DB_PASSWORD`, `DB_HOST`, `DB_PORT`, `DB_NAME`).
+3. **Start command:** use:
+   ```bash
+   streamlit run dashboard/app.py
+   ```
+
+In Streamlit Community Cloud, set your values in **App settings → Secrets**.
 
 ## 🔄 Scheduling (Optional)
 
