@@ -1,9 +1,9 @@
 requests==2.31.0
 psycopg2-binary
 sqlalchemy
-pandas==2.1.4
-numpy==1.26.2
-scipy==1.11.4
+pandas>=2.2.2
+numpy>=1.26.4
+scipy>=1.13.0
 python-dotenv==1.0.0
 streamlit==1.29.0
 plotly==5.18.0
